@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleek | Graphic Design Portfolio</title>
+    <meta name="description"
+        content="Professional graphic design portfolio featuring kitchen/restaurant works, flyers, logos, motion graphics, and more." />
+    <!-- Modern Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- Fixed Gradient Background -->
+        <div class="bg-gradient"></div>
+
+        <!-- Interactive Grid Background -->
+        <div class="bg-grid"></div>
+
+        <!-- Main Content Container -->
+        <main class="container">
+
+            <header class="hero">
+                <div class="hero-content">
+                    <h2 class="subtitle">Creative Visionary</h2>
+                    <h1 class="title">Designing <br><span class="highlight">Visual Impact</span></h1>
+                    <p class="description">Elevating brands through stunning graphic design, motion graphics, and
+                        digital experiences.</p>
+                </div>
+            </header>
+
+            <!-- Floating Menu Container -->
+            <section class="portfolio-menu" id="portfolioMenu">
+                <button class="menu-item bento-large" data-category="kitchen">
+                    <div class="item-icon"><i class="fas fa-utensils"></i></div>
+                    <span class="item-text">Kitchen / Restaurant</span>
+                </button>
+                <button class="menu-item bento-standard" data-category="flyers">
+                    <div class="item-icon"><i class="fas fa-file-alt"></i></div>
+                    <span class="item-text">Flyers</span>
+                </button>
+                <button class="menu-item bento-standard" data-category="mails">
+                    <div class="item-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <span class="item-text">Mails</span>
+                </button>
+                <button class="menu-item bento-wide" data-category="logos">
+                    <div class="item-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <span class="item-text">Logos</span>
+                </button>
+                <button class="menu-item bento-tall" data-category="motion">
+                    <div class="item-icon"><i class="fas fa-film"></i></div>
+                    <span class="item-text">Motion Graphics</span>
+                </button>
+                <button class="menu-item bento-standard" data-category="twitter">
+                    <div class="item-icon"><i class="fab fa-twitter"></i></div>
+                    <span class="item-text">Twitter Banner</span>
+                </button>
+            </section>
+
+        </main>
+
+        <!-- Portfolio Viewer Modal -->
+        <div class="portfolio-modal" id="portfolioModal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+                <h2 class="modal-title" id="modalTitle">Category</h2>
+                <div class="modal-gallery" id="modalGallery">
+                    <!-- Gallery items injected here by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
